@@ -1,0 +1,171 @@
+.admin {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  margin-left: 245px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 245px;
+  height: 100vh;
+  box-sizing: border-box;
+
+  flex-shrink: 0;
+  background: #172033;
+  color: #cbd5e1;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+  padding: 4px 10px 36px;
+}
+
+.nav-label {
+  font-size: 11px;
+  color: #8190a8;
+  letter-spacing: 1.5px;
+  padding-left: 10px;
+}
+
+.nav-item {
+  display: block;
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 13px 12px;
+  margin: 3px 0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  background: #27364e;
+  color: white;
+}
+
+.nav-item.active {
+  background: #334155;
+  color: #67e8f9;
+  font-weight: 600;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding: 20px 10px 0;
+  font-size: 12px;
+  color: #8190a8;
+}
+
+
+.main {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  height: 68px;
+  background: white;
+  border-bottom: 1px solid #e8edf4;
+  padding: 0 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.admin-user {
+  color: #172033;
+  font-weight: 600;
+}
+
+.content {
+  padding: 32px 64px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.primary, .success {
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 17px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.primary {
+  background: #2563eb;
+}
+
+.success {
+  background: #16a34a;
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.success:hover {
+  background: #15803d;
+}
+
+.primary:disabled, .success:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 190px;
+  }
+
+  .content {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebar {
+    width: 65px;
+    padding: 18px 6px;
+  }
+
+  .brand {
+    font-size: 0;
+    padding: 10px 5px 30px;
+  }
+
+  .brand::after {
+    content: "PC";
+    font-size: 17px;
+  }
+
+  .nav-label, .nav-item, .sidebar-bottom {
+    font-size: 0;
+    text-align: center;
+    padding: 14px 3px;
+  }
+
+  .nav-item::first-letter {
+    font-size: 18px;
+  }
+
+  .topbar {
+    padding: 0 15px;
+  }
+
+  .content {
+    padding: 18px 12px;
+  }
+}

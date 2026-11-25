@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+# .NET generated files
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Temporary files
+*.user
+*.suo
+*.cache

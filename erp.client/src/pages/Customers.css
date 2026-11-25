@@ -1,0 +1,128 @@
+.customers-page .customer-table {
+  min-width: 1050px;
+}
+
+.address-btn {
+  margin-right: 10px;
+}
+
+.customer-col-id {
+  width: 115px;
+}
+
+.customer-col-type {
+  width: 115px;
+}
+
+.customer-col-name {
+  width: 210px;
+}
+
+.customer-col-email {
+  width: 230px;
+}
+
+.customer-col-phone {
+  width: 145px;
+}
+
+.customer-col-tax {
+  width: 140px;
+}
+
+.customer-col-actions {
+  width: 150px;
+}
+
+.customer-id {
+  color: #536d9b;
+  font-family: Consolas, monospace;
+}
+
+.customer-name-cell {
+  min-width: 0;
+}
+
+.customer-name-cell strong {
+  display: block;
+  overflow: hidden;
+  color: #263247;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+
+.customer-name-cell small {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+  color: #8b95a6;
+  font-size: 11px;
+  text-overflow: ellipsis;
+}
+
+.customer-contact {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.customer-type-badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.customer-type-badge.individual {
+  background: #eaf0ff;
+  color: #3159b8;
+}
+
+.customer-type-badge.company {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.customer-id-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  color: #39465b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.customer-id-note strong {
+  color: #748197;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.customers-page .form-grid select {
+  width: 100%;
+  border: 1px solid #dce3ed;
+  border-radius: 7px;
+  padding: 10px 11px;
+  background: white;
+  color: #172033;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.customers-page .form-grid select:focus {
+  border-color: #3b82f6;
+  outline: 2px solid rgb(59 130 246 / 12%);
+}
+
+.customer-form-error {
+  margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .customers-page .page-heading {
+    align-items: flex-start;
+  }
+}
